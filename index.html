@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fomenko</title>
   <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body background="fon-image.jpg">
   <div class="wrapper">
@@ -17,10 +18,10 @@
             class="logo-img">
         </div>
         <ul id="main-menu">
-            <li class="main-menu-item"><a href="index.html">Главная</a></li>
-            <li class="main-menu-item"><a href="#">Достижения</a></li>
-            <li class="main-menu-item"><a href="#">Контакты</a></li>
-        </ul>
+          <li class="main-menu-item"><button><a href="index.html">Главная</a></button></li>
+          <li class="main-menu-item"><button><a href="#">Достижения</a></button></li>
+          <li class="main-menu-item"><button><a href="#">Контакты</a></button></li>
+      </ul>
     </nav>
     </header>
     <main class="main">
@@ -52,20 +53,13 @@
       двигателя внутреннего сгорания, управляющий открытием и закрытием клапанов двигателя. Основная деталь газораспределительного механизма (ГРМ), служащего для синхронизации тактов работы двигателя и 
       впуска-выпуска топливной смеси/воздуха и отработанных газов.</b></li>
     <li><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BB_(%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D1%8C_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD)#:~:text=%D0%BD%D0%B0%20%D0%B2%D0%B5%D0%B4%D1%83%D1%89%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BB%D0%B5%D1%81%D0%B0.-,%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D1%82%D1%83%D1%80%D0%B0,-%5B%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C%20%7C">Ссылка на фрагмент страницы стороннего сайта</a></li>      
-   <li>
-      <img src="2.jpg" width="300" height="200" alt="Квадратная область" usemap="#Kvadrat">
-      <map name="Kvadrat">
-          <area shape="rect" coords="280,215,630,405" href="https://www.youtube.com/watch?v=pK7CIj-_uBk" alt="Прямоугольная область">
+    <li><img src = "2.jpg" width="300" height="200" usemap = "#figuri" alt="круг">
+      <map name = "figuri" >
+        <area shape = "rect" coords = "25, 25, 125, 125"alt = "Красный квадрат" ><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82"></a>
+        <area shape = "circle" coords = "200,75,50" alt = "Зелёный круг" ><a href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3"></a>
       </map>
   </li>
 
-  <li>
-      <img src="2.jpg" width="300" height="200" alt="Круглая область" usemap="#krug">
-      <map name="krug">
-          <area shape="circle" coords="450,300,100" href="https://www.youtube.com/watch?v=Cz6ISOW2GV0" alt="Круглая область">
-      </map>
-  </li>
-    </li>
     <li><a href = "">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
     <li><a href="https://www.youtube.com/watch?v=-alqtU2K164" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
@@ -83,45 +77,51 @@
       <a href = "ftp://nikita:1234@poffi.net/text.txt">Ссылка на файл на сервере FTP с авторизацией</a>
     </li>
   </ul>
-    <table id="main-table" border="1" align="center" cellpadding="10" cellspacing="0">
-        <tr align="center" class="table"><th>Игра</th><th>Разработчик</th><th>Год выхода</th><th>Режим</th></tr>
-        <tr align="center" class="main-menu-item-nech"><td>DOTA 2</td><td rowspan="2">Valve</td><td>2013</td><td>Online</td></tr>
-        <tr align="center" class="main-menu-item-chet"><td>CS:GO</td><td>2012</td><td>Online</td></tr>
-        <tr align="center" class="main-menu-item-nech"><td>GTA 5</td><td>Rockstar Games</td><td>2013</td><td>Online/Offline</td></tr>
-        <tr align="center" class="main-menu-item-chet"><td>Cyberpunk 2077</td><td>CD Project RED</td><td>2020</td><td>Offline</td></tr>
-        <tr align="center" class="main-menu-item-nech"><td>Metro 2033</td><td>A4 Games</td><td>2010</td><td>Offline</td></tr>
-        <tr align="center" class="main-menu-item-chet"><td>Resident Evil Village</td><td>Capcom</td><td>2021</td><td>Offline</td></tr>
+  <section id="table" class="table_sec">
+    <div class="table">
+    <table>
+      <thead>
+        <tr><th>Игра</th><th>Разработчик</th><th>Год выхода</th><th>Режим</th></tr>
+      </thead>
+        <tr class="main-menu-item-nech"><td>DOTA 2</td><td rowspan="2">Valve</td><td>2013</td><td>Online</td></tr>
+        <tr class="main-menu-item-chet"><td>CS:GO</td><td>2012</td><td>Online</td></tr>
+        <tr class="main-menu-item-nech"><td>GTA 5</td><td>Rockstar Games</td><td>2013</td><td>Online/Offline</td></tr>
+        <tr class="main-menu-item-chet"><td>Cyberpunk 2077</td><td>CD Project RED</td><td>2020</td><td>Offline</td></tr>
+        <tr class="main-menu-item-nech"><td>Metro 2033</td><td>A4 Games</td><td>2010</td><td>Offline</td></tr>
+        <tr class="main-menu-item-chet"><td>Resident Evil Village</td><td>Capcom</td><td>2021</td><td>Offline</td></tr>
     </table>
+  </div>
+</section>
     <form action="/" method="POST">      
     <label>
       ФИО:
       <br>
-      <input name="field-name-1" value="введите ФИО" >
+      <input name="field-name-1" value="введите ФИО" required>
     </label>
     <br>
 
     <label>
       Телефон:<br>
-      <input name="field-tel" type="tel" placeholder="Введите ваш номер" >
+      <input name="field-tel" type="tel" placeholder="Введите ваш номер" required>
       </label><br>
 
     <label>
       email:<br>
-      <input name="field-email" type="email" placeholder="Введите вашу почту" >
+      <input name="field-email" type="email" placeholder="Введите вашу почту" required>
     </label><br>
 
     <label>
       Дата рождения:<br>
-      <input name="field-date" value="2023-08-09" type="date">
+      <input name="field-date" value="2023-08-09" type="date" required>
     </label><br>
 
     Пол:<br>
 
     <label>
-      <input type="radio" checked="checked" name="radio-group-1" value="Значение1" >
+      <input type="radio" checked="checked" name="radio-group-1" value="Значение1" required>
       Мужской
     </label>
-      <label><input type="radio" name="radio-group-1" value="Значение2" >
+      <label><input type="radio" name="radio-group-1" value="Значение2" required>
       Женский
     </label><br >
 
