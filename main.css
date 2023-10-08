@@ -26,7 +26,9 @@ body{
 }
 .main-menu-item{
     display: inline-block;
-   
+}
+.main-menu-item button:not(:last-child){
+    border-bottom: none;
 }
 .main-menu-item a{
     color: white;
@@ -79,7 +81,43 @@ h1{
     font-weight:lighter;
 }
 /* TABLE */
-.table{background-color: darkkhaki;}
+.table{
+    background-color:#412c10;
+    max-width: 500px;
+    margin: 0 auto;
+    padding:10px;
+    margin-top:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    width: 600px;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border-spacing: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .table table{
+    padding-left: 170px;
+    padding-right: 170px;
+    }
+    thead{
+        font-weight: normal;
+        color: #000000;
+        padding: 10px 15px;
+    }
+    th {
+        font-weight: normal;
+        color: #000000;
+        padding: 10px 15px;
+      }
+      td {
+        color: #000000;
+        border-top: 1px solid #364561;
+        padding: 10px 15px;
+      }
+      tr:nth-child(2n) {
+        background: #7a9cd2;
+      }
 .main-menu-item-nech{
     background-color: aqua;
     color: rgb(0, 0, 0);
@@ -103,6 +141,44 @@ h1{
     position: sticky;
     top: 0;
 }
-.footer{
-    background-color: blue;
-}
+
+@media screen and (max-width: 425px){
+    #main-menu{
+        list-style: none;
+    }
+    .main-menu-item button{
+        display: block;
+    }
+    .main-menu-item a{
+        color: white;
+        text-decoration: none;
+        background-color: lightsalmon;
+        padding: 15px 24px;
+        margin: 5px, -100px, -100px, -100px;
+        border-radius: 5px; 
+    }
+    .main-menu-item button:not(:last-child){
+        border-bottom: none;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+      }
+    
+      table thead{
+        display: none;
+      }
+      tr{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+      }
+    
+      td {
+        padding-top: 35px;
+        position: relative;
+        width: 100%;
+      }
+  } 
