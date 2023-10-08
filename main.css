@@ -27,9 +27,7 @@ body{
 .main-menu-item{
     display: inline-block;
 }
-.main-menu-item button:not(:last-child){
-    border-bottom: none;
-}
+
 .main-menu-item a{
     color: white;
     text-decoration: none;
@@ -146,8 +144,9 @@ h1{
     #main-menu{
         list-style: none;
     }
-    .main-menu-item button{
+    .main-menu-item{
         display: block;
+        margin-top: 2rem;
     }
     .main-menu-item a{
         color: white;
@@ -157,9 +156,7 @@ h1{
         margin: 5px, -100px, -100px, -100px;
         border-radius: 5px; 
     }
-    .main-menu-item button:not(:last-child){
-        border-bottom: none;
-    }
+    
     table{
         border-collapse: collapse;
         width: 100%;
