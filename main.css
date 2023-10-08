@@ -140,7 +140,7 @@ h1{
     top: 0;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 480px){
     #main-menu{
         list-style: none;
     }
